@@ -1,0 +1,25 @@
+{
+  "name": "conditionals",
+  "version": "0.0.1",
+  "description": "conditional objects rendering",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alizhdanov/Conditionals.git"
+  },
+  "author": "Ali Zhdanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alizhdanov/Conditionals/issues"
+  },
+  "homepage": "https://github.com/alizhdanov/Conditionals#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0"
+  }
+}
