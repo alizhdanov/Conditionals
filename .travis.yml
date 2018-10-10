@@ -20,3 +20,10 @@ jobs:
     - stage: build
       script:
         - yarn build
+
+deploy:
+  provider: npm
+  email: $NPM_API_EMAIL
+  api_key: $NPM_API_KEY
+  on:
+    tags: true
