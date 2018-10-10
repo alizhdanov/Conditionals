@@ -1,11 +1,14 @@
 {
-  "name": "conditionals",
+  "name": "conditional-elements",
   "version": "0.0.1",
-  "description": "conditional objects rendering",
+  "description": "Conditional elements in array and object",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf lib",
     "build": "./node_modules/.bin/babel src --out-dir lib",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "lint": "eslint .",
+    "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,19 @@
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0"
-  }
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "regenerator-runtime": "^0.12.1",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {}
 }
