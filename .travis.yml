@@ -1,0 +1,20 @@
+language: node_js
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+stages:
+  - test
+  - build
+
+jobs:
+  include:
+    - stage: test
+      script:
+        - yarn test
+
+    - stage: build
+      script:
+        - yarn build
