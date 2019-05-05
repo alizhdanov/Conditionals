@@ -1,5 +1,7 @@
 # Conditionals
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/alizhdanov/Conditionals.svg)](https://greenkeeper.io/)
+
 Conditional elements in array and object.
 
 This npm package is filtering out `undefined` and `null` values.
